@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Food Delivery</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="logo">Slice 'n' Smile</div>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Menu</a></li>
+                <li><a href="#">Blog</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+
+            <div class="nav-right">
+                <!-- search Bar -->
+                <div class="search-container1">
+                    <input type="text" placeholder="Search..." class="search-input1">
+                    <button class="search-btn1">
+                        <img src="./img/search bar.webp" alt="Search">
+                    </button>
+                </div>
+                <!-- Cart Icon -->
+                <div class="cart-icon">
+                    <img src="./img/cart.png" alt="Cart">
+                </div>
+            </div>
+            <!-- Cart Modal -->
+            <div id="cart-modal" class="cart-modal">
+                <div class="cart-content">
+                    <span class="close-btn">&times;</span>
+                    <div class="cart-empty">
+                        <img src="./img/cart.png" alt="Empty Cart">
+                        <h2>Cart is Empty</h2>
+                        <p>Add some items into the cart before going to checkout</p>
+                        <button id="close-cart">Back to Menu</button>
+                    </div>
+                </div>
+            </div>
+
+        </nav>
+    </header>
+
+    <section class="hero">
+        <div class="hero1">
+            <p class="p1">Authentic Home </p>
+            <p class="p1">Food in India</p>
+            <p>Choose from a wide range of delicious home-cooked, </p>
+            <p>food and get it delivered to your doorstep.</p>
+            <div class="search-container">
+                <input type="text" id="search-input" placeholder="Search food you love">
+                <button id="search-button">Search</button>
+            </div>
+        </div>
+        <div class="hero-img">
+            <img src="./img/josh tech.png" alt="Hero">
+        </div>
+    </section>
+
+    <section class="menu">
+        <h2>Home Kitchen</h2>
+        <div class="menu-items">
+            <!-- Add food items dynamically -->
+            <div class="food-card">
+                <div class="discount">10%</div>
+                <img src="./img/img1.jpg" alt="Home made pizza">
+                <div class="card-content">
+                    <h3>Home made pizza</h3>
+                    <div class="price">&#8377 249</div>
+                    <div class="details">
+                        <span class="rating">⭐ 4.8</span>
+                        <div class="time">
+                            ⏳ <span>30-40 min</span>
+                        </div>
+                    </div>
+                    <button class="add-btn">+</button>
+                </div>
+            </div>
+            <div class="food-card">
+                <div class="discount">5%</div>
+                <img src="./img/img2.jpg" alt="Home made pizza">
+                <div class="card-content">
+                    <h3>Home made pizza</h3>
+                    <div class="price">&#8377 209</div>
+                    <div class="details">
+                        <span class="rating">⭐ 4.7</span>
+                        <div class="time">
+                            ⏳ <span>30-40 min</span>
+                        </div>
+                    </div>
+                    <button class="add-btn">+</button>
+                </div>
+            </div>
+            <div class="food-card">
+                <div class="discount">6%</div>
+                <img src="./img/img3.jpg" alt="Home made pizza">
+                <div class="card-content">
+                    <h3>Home made pizza</h3>
+                    <div class="price">&#8377 199</div>
+                    <div class="details">
+                        <span class="rating">⭐ 4.6</span>
+                        <div class="time">
+                            ⏳ <span>30-40 min</span>
+                        </div>
+                    </div>
+                    <button class="add-btn">+</button>
+                </div>
+            </div>
+            <div class="food-card">
+                <div class="discount">10%</div>
+                <img src="./img/img4.jpg" alt="Home made pizza">
+                <div class="card-content">
+                    <h3>Home made pizza</h3>
+                    <div class="price">&#8377 249</div>
+                    <div class="details">
+                        <span class="rating">⭐ 4.7</span>
+                        <div class="time">
+                            ⏳ <span>30-40 min</span>
+                        </div>
+                    </div>
+                    <button class="add-btn">+</button>
+                </div>
+            </div>
+            <div class="food-card">
+                <div class="discount">15%</div>
+                <img src="./img/img5.jpg" alt="Home made pizza">
+                <div class="card-content">
+                    <h3>Home made pizza</h3>
+                    <div class="price">&#8377 229</div>
+                    <div class="details">
+                        <span class="rating">⭐ 4.7</span>
+                        <div class="time">
+                            ⏳ <span>30-40 min</span>
+                        </div>
+                    </div>
+                    <button class="add-btn">+</button>
+                </div>
+            </div>
+            <div class="food-card">
+                <img src="./img/img6.jpg" alt="Home made pizza">
+                <div class="card-content">
+                    <h3>Home made pizza</h3>
+                    <div class="price">&#8377 219</div>
+                    <div class="details">
+                        <span class="rating">⭐ 4.6</span>
+                        <div class="time">
+                            ⏳ <span>30-40 min</span>
+                        </div>
+                    </div>
+                    <button class="add-btn">+</button>
+                </div>
+            </div>
+            <div class="food-card">
+                <img src="./img/img7.jpg" alt="Home made pizza">
+                <div class="card-content">
+                    <h3>Home made pizza</h3>
+                    <div class="price">&#8377 129</div>
+                    <div class="details">
+                        <span class="rating">⭐ 4.7</span>
+                        <div class="time">
+                            ⏳ <span>30-40 min</span>
+                        </div>
+                    </div>
+                    <button class="add-btn">+</button>
+                </div>
+            </div>
+            <div class="food-card">
+                <div class="discount">15%</div>
+                <img src="./img/img8.jpg" alt="Home made pizza">
+                <div class="card-content">
+                    <h3>Home made pizza</h3>
+                    <div class="price">&#8377 179</div>
+                    <div class="details">
+                        <span class="rating">⭐ 4.4</span>
+                        <div class="time">
+                            ⏳ <span>30-40 min</span>
+                        </div>
+                    </div>
+                    <button class="add-btn">+</button>
+                </div>
+            </div>
+
+
+        </div>
+    </section>
+
+    <section class="popular-items">
+        <h2>Popular Items</h2>
+        <div class="carousel">
+            <button class="prev">&#10094;</button>
+            <div class="carousel-container">
+                <div class="food-card">
+                    <div class="discount">10%</div>
+                    <img src="./img/img2.jpg" alt="Home made pizza">
+                    <div class="card-content">
+                        <h3>Home made pizza</h3>
+                        <div class="price">&#8377 189</div>
+                        <div class="details">
+                            <span class="rating">⭐ 4.7</span>
+                            <div class="time">
+                                ⏳ <span>30-40 min</span>
+                            </div>
+                        </div>
+                        <button class="add-btn">+</button>
+                    </div>
+                </div>
+                <div class="food-card">
+                    <img src="./img/img7.jpg" alt="Home made pizza">
+                    <div class="card-content">
+                        <h3>Home made pizza</h3>
+                        <div class="price">&#8377 219</div>
+                        <div class="details">
+                            <span class="rating">⭐ 4.7</span>
+                            <div class="time">
+                                ⏳ <span>30-40 min</span>
+                            </div>
+                        </div>
+                        <button class="add-btn">+</button>
+                    </div>
+                </div>
+                <div class="food-card">
+                    <img src="./img/img6.jpg" alt="Home made pizza">
+                    <div class="card-content">
+                        <h3>Home made pizza</h3>
+                        <div class="price">&#8377 159</div>
+                        <div class="details">
+                            <span class="rating">⭐ 4.7</span>
+                            <div class="time">
+                                ⏳ <span>30-40 min</span>
+                            </div>
+                        </div>
+                        <button class="add-btn">+</button>
+                    </div>
+                </div>
+                <div class="food-card">
+                    <div class="discount">5%</div>
+                    <img src="./img/img8.jpg" alt="Home made pizza">
+                    <div class="card-content">
+                        <h3>Home made pizza</h3>
+                        <div class="price">&#8377 209</div>
+                        <div class="details">
+                            <span class="rating">⭐ 4.8</span>
+                            <div class="time">
+                                ⏳ <span>30-40 min</span>
+                            </div>
+                        </div>
+                        <button class="add-btn">+</button>
+                    </div>
+                </div>
+                <div class="food-card">
+                    <div class="discount">5%</div>
+                    <img src="./img/img5.jpg" alt="Home made pizza">
+                    <div class="card-content">
+                        <h3>Home made pizza</h3>
+                        <div class="price">&#8377 249</div>
+                        <div class="details">
+                            <span class="rating">⭐ 4.9</span>
+                            <div class="time">
+                                ⏳ <span>30-40 min</span>
+                            </div>
+                        </div>
+                        <button class="add-btn">+</button>
+                    </div>
+                </div>
+                <div class="food-card">
+                    <div class="discount">5%</div>
+                    <img src="./img/img7.jpg" alt="Home made pizza">
+                    <div class="card-content">
+                        <h3>Home made pizza</h3>
+                        <div class="price">&#8377 159</div>
+                        <div class="details">
+                            <span class="rating">⭐ 4.7</span>
+                            <div class="time">
+                                ⏳ <span>30-40 min</span>
+                            </div>
+                        </div>
+                        <button class="add-btn">+</button>
+                    </div>
+                </div>
+                <div class="food-card">
+                    <div class="discount">7%</div>
+                    <img src="./img/img1.jpg" alt="Home made pizza">
+                    <div class="card-content">
+                        <h3>Home made pizza</h3>
+                        <div class="price">&#8377 219</div>
+                        <div class="details">
+                            <span class="rating">⭐ 4.6</span>
+                            <div class="time">
+                                ⏳ <span>30-40 min</span>
+                            </div>
+                        </div>
+                        <button class="add-btn">+</button>
+                    </div>
+                </div>
+            </div>
+            <button class="next">&#10095;</button>
+            <!-- The request form modal -->
+            <!-- Request Dish Button -->
+<button data-action="request-dish">Request a Dish</button>
+
+<!-- Request Dish Modal -->
+<div id="requestDishModal" class="modal">
+    <div class="modal-content">
+        <span class="close">&times;</span>
+        <h2>Request a Dish</h2>
+        <div id="requestDishForm">
+            <label for="dishName">Name*</label>
+            <input type="text" id="dishName" placeholder="Enter name of the dish" required>
+            <br>
+            <label for="dishImage">Upload an image</label>
+            <input type="text" id="dishImage" placeholder="Paste a URL">
+
+            <div class="buttons">
+                <button type="button" class="cancel">Cancel</button>
+                <button type="button" id="submitRequest" class="submit">Submit Request</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Success Message (Hidden by Default) -->
+<div id="successMessage" class="success-popup">Your order request has been submitted successfully!</div>
+
+        </div>
+
+    </section>
+
+    <section class="video-section">
+        <h2>We are providing the best home-cooked food delivery service.</h2>
+        <video id="promo-video" autoplay muted loop playsinline controls>
+            <source src="pizza-making.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+
+    </section>
+
+    <section class="contact">
+        <div class="contact-container">
+            <div class="contact-form">
+                <h2>Do you have a question or want to become a seller?</h2>
+                <p>Fill this form and our manager will contact you in the next 48 hours.</p>
+                <form>
+                    <div class="input-group">
+                        <input type="text" placeholder="Your Name">
+                        <input type="email" placeholder="Your email">
+                    </div>
+                    <textarea placeholder="Your message"></textarea>
+                    <button type="submit">Submit</button>
+                </form>
+            </div>
+            <div class="contact-img">
+                <img src="./img/josh img.png" alt="Delivery illustration">
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-logo">
+                <h2>Slice 'n' Smile</h2>
+            </div>
+            <nav class="footer-nav">
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Menu</a></li>
+                    <li><a href="#">Blog</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="footer-social">
+                <a href="#"><img src="./img/facebook.png" alt="Facebook"></a>
+                <a href="#"><img src="./img/insta.jpg" alt="Instagram"></a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

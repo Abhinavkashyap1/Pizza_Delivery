@@ -1,0 +1,943 @@
+/* styles.css */
+
+body {
+    font-family: 'Rubik', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #f8f8f8;
+}
+
+header {
+    background-color: #4CAF50;
+    color: white;
+    padding: 15px 0;
+    text-align: center;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+    
+}
+
+ul {
+    list-style: none;
+    display: flex;
+    padding: 0;
+    margin: 0;
+}
+
+ul li {
+    margin: 0 15px;
+}
+
+ul li a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+/* ---- Search bar design -----  */
+/* Search Bar Container */
+
+.nav-right {
+    display: flex;
+    align-items: center;
+    gap: 15px; /* Reduce spacing */
+}
+
+.search-container1 {
+    display: flex;
+    align-items: center;
+    background: white;
+    border-radius: 15px; /* Adjusted for smaller height */
+    padding: 2px 8px; /* Adjust padding for compact design */
+    border: 1px solid #ccc;
+    width: 200px; 
+    height: 30px; 
+    transition: 0.3s;
+}
+
+/* Search Input */
+.search-input1 {
+    border: none;
+    outline: none;
+    flex: 1;
+    padding: 2px 5px;
+    font-size: 12px;
+    border-radius: 15px;
+    height: 16px; /* Slightly smaller than container */
+}
+
+/* Search Button */
+.search-btn1 {
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+    margin-left: 5px;
+}
+
+/* Search Icon */
+.search-btn1 img {
+    width: 14px; /* Smaller icon */
+    height: 14px;
+}
+
+/* Hover & Focus Effects */
+.search-container1:hover,
+.search-container1:focus-within {
+    border-color: #4CAF50; /* Green highlight */
+    box-shadow: 0px 0px 3px rgba(76, 175, 80, 0.5);
+}
+.cart-icon img {
+    width: 30px;
+    cursor: pointer;
+}
+
+.hero {
+    display: flex;  
+    align-items: center; 
+    justify-content: center; 
+    padding: 50px;
+    background-color: #1AC073;
+}
+
+.hero1 {
+    width: 100%; 
+    text-align: left; 
+    padding-right: 20px; 
+}
+
+.hero-image {
+    max-width: 100%;
+    height: auto;
+    display: block; 
+}
+.p1 {
+    font-family: 'Arial Black', sans-serif; /* Or the correct font name */
+    font-weight: bold;
+    font-size: 52px;
+    color: white;
+    text-align: left;
+    margin-left: 30px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+p {
+    font-family: 'Arial', sans-serif; /* Or a similar font */
+    font-weight: normal;
+    font-size: 18px;
+    color: white;
+    text-align: left;
+    margin-left: 30px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+
+/* Search Bar Container */
+.search-container {
+    display: flex;
+    align-items: center;
+    align-items: stretch;
+    width: 350px;
+    margin-top: 30px;
+    margin-left: 30px;
+    background-color: white;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Input Field */
+#search-input {
+    flex: 1;
+    border: none;
+    padding: 12px;
+    font-size: 16px;
+    outline: none;
+    color: #666;
+}
+
+/* Search Button */
+#search-button {
+    margin: 0px;
+    background-color: #f4a900;
+    color: white;
+    border: none;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+#search-button:hover {
+    background-color: #d98b00;
+}
+
+
+button {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 10px;
+}
+
+.menu, .popular-items, .video-section {
+    text-align: center;
+    padding: 30px;
+}
+
+h2{
+    margin-top: 0px;
+    margin-bottom: 30px;
+}
+.menu-items {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+/* Food Card Styling */
+
+.food-card {
+    position: relative;
+    width: 250px;
+    height: 480px;
+    margin: 10px;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    text-align: center;
+    transition: transform 0.3s ease-in-out;
+}
+/* Card Styling */
+.card-content {
+    padding: 15px;
+    text-align: center;
+    flex-grow: 1;
+}
+
+.food-card:hover {
+    transform: translateY(-5px);
+}
+
+/* Discount Badge Fix */
+.food-card .discount {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    background: red;
+    color: white;
+    padding: 3px 8px;
+    font-size: 12px;
+    font-weight: bold;
+    border-radius: 3px;
+}
+
+/* Image Styling */
+.food-card img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    object-fit: cover;
+}
+
+
+/* Title Styling */
+.card-content h3 {
+    font-size: 1.2em;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+/* Price Styling */
+.price {
+    font-size: 1.4em;
+    font-weight: 800;
+    color: #4CAF50;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+/* Rating & Delivery Time Styling */
+.details {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 14px;
+    color: rgb(108, 108, 108);
+    padding: 5px 10px;
+}
+
+.details .rating-time {
+    display: flex;
+    align-items: center;
+    gap: 3px; /* Ensures proper spacing */
+}
+
+/* Add Button Styling */
+.add-btn {
+    width: 35px;
+    height: 35px;
+    background: #4CAF50;
+    color: white;
+    border: none;
+    font-size: 18px;
+    border-radius: 50%;
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: background 0.3s ease-in-out;
+    position: absolute;
+    bottom: -5px; /* Moves button below the image */
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.add-btn:hover {
+    background: #388E3C;
+}
+
+.carousel {
+    position: relative;
+    width: 80%;
+    margin: auto;
+}
+
+.carousel-container {
+    display: flex;
+    overflow-x: hidden; 
+    scroll-behavior: smooth; 
+}
+
+.food-card {
+    background: #fff;
+    margin: 0 15px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    text-align: center;
+    margin-right: 0px;
+    flex: 0 0 auto;  /*  Important:  Allows cards to be different sizes and prevents them from stretching */
+}
+
+.food-card img {
+    width: 100%;
+    border-radius: 8px 8px 0 0;
+}
+
+.discount {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    background-color: #e74c3c;
+    color: white;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+.card-content {
+    padding: 15px;
+}
+
+.card-content h3 {
+    font-size: 1.2em;
+    margin-bottom: 10px;
+}
+
+.price {
+    font-size: 1.4em;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.details {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+.details .rating,
+.details .time {
+    font-size: 0.9em;
+    color: #555;
+}
+
+.add-btn {
+    background-color: #2ecc71;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    font-size: 1.2em;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.add-btn:hover {
+    background-color: #27ae60;
+}
+
+.prev,
+.next {
+    background: none;
+    border: none;
+    font-size: 2em;
+    color: #333;
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 10;
+}
+
+.prev {
+    left: 10px;
+}
+
+.next {
+    right: 10px;
+}
+
+.prev:hover,
+.next:hover {
+    color: #e74c3c;
+}
+
+  
+
+.prev, .next {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    font-size: 18px;
+}
+
+/* Unique Button Styling */
+button[data-action="request-dish"] {
+    background: #ff9800;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+
+button[data-action="request-dish"]:hover {
+    background: #e68900;
+}
+
+/* Modal Styling */
+.modal {
+    display: none; /* Initially hidden */
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.modal-content {
+    background: white;
+    width: 50%;
+    margin: 10% auto;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    position: relative;
+}
+/* Success Popup */
+.success-popup {
+    display: none; /* Hide initially */
+    position: fixed;
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 16px;
+    text-align: center;
+    z-index: 1050;
+}
+
+
+/* Close Button */
+.close {
+    position: absolute;
+    right: 20px;
+    top: 10px;
+    font-size: 25px;
+    cursor: pointer;
+}
+
+/* Form Inputs */
+input {
+    width: 80%;
+    padding: 8px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+/* Submit & Cancel Buttons */
+.buttons {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.cancel,
+.submit1 {
+    padding: 8px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.cancel {
+    background: #ddd;
+    color: black;
+}
+
+.cancel:hover {
+    background: #bbb;
+}
+
+.submit1 {
+    background: #4CAF50;
+    color: white;
+}
+
+.submit1:hover {
+    background: #45a049;
+}
+
+/* Success Message Popup */
+.success-popup {
+    display: none;
+    position: fixed;
+    top: 20%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 16px;
+    z-index: 1001;
+    animation: fadeOut 3s forwards;
+}
+
+/* Success Message Animation */
+@keyframes fadeOut {
+    0% { opacity: 1; }
+    80% { opacity: 1; }
+    100% { opacity: 0; display: none; }
+}
+
+
+video {
+    width: 80%;
+    max-width: 600px;
+    border-radius: 10px;
+    display: block;
+    margin: auto;
+}
+
+.video-section {
+    position: relative;
+    text-align: center;
+    padding: 20px;
+}
+
+.video-section::after {
+    content: "";
+    position: absolute;
+    bottom: -30px;
+    left: 0;
+    width: 100%;
+    height: 50%; /* Covers only the lower half */
+    background-color: #b8fce8; /* Light green background */
+    z-index: -1;
+}
+/* contact form  */
+.contact {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #f7f8fa;
+    padding: 40px;
+}
+
+.contact-container {
+    display: flex;
+    max-width: 1100px;
+    width: 90%;
+    background: #F0FAF7;
+    border-radius: 10px;
+    align-items: center;
+    padding: 40px;
+}
+
+.contact-form {
+    flex: 1;
+    padding-right: 40px;
+}
+
+.contact-form h2 {
+    font-size: 24px;
+    color: #222;
+    margin-bottom: 10px;
+}
+
+.contact-form p {
+    font-size: 14px;
+    color: #777;
+    margin-bottom: 20px;
+}
+
+.input-group {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 15px;
+}
+
+.input-group input,
+textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+textarea {
+    height: 120px;
+    resize: none;
+}
+
+button {
+    background-color: #22c55e;
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    font-size: 16px;
+    align-items: center;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+button:hover {
+    background-color: #16a34a;
+}
+
+.contact-img {
+    flex: 1;
+    text-align: right;
+}
+
+.contact-img img {
+    max-width: 100%;
+    height: auto;
+}
+@media (max-width: 768px) {
+    .contact-container {
+        flex-direction: column; /* Stack image below form */
+        text-align: center;
+    }
+
+    .contact-img {
+        text-align: center; /* Centers image */
+        margin-top: 20px;
+    }
+
+    .contact-img img {
+        max-width: 80%; /* Ensures image is not too big */
+    }
+}
+
+
+rm {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+input, textarea {
+    margin: 10px;
+    padding: 10px;
+    width: 80%;
+    max-width: 400px;
+}
+
+/* Footer Base Styling */
+.footer {
+    background-color: #22c55e; /* Green background */
+    padding: 15px 0;
+    color: white;
+}
+
+/* Footer Flexbox Container */
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: auto;
+    padding: 0 20px;
+}
+
+/* Logo Styling */
+.footer-logo h2 {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+/* Navigation Menu */
+.footer-nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    padding: 0;
+    margin: 0;
+}
+
+.footer-nav ul li {
+    display: inline;
+}
+
+.footer-nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.footer-nav ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Social Icons */
+.footer-social a img {
+    width: 30px;
+    margin-left: 10px;
+    border-radius: 10%;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .footer-container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .footer-nav ul {
+        flex-direction: column;
+        gap: 10px;
+        margin-top: 10px;
+    }
+
+    .footer-social {
+        margin-top: 10px;
+    }
+}
+
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+    nav {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    ul {
+        flex-direction: column;
+        text-align: center;
+        padding: 10px 0;
+    }
+    
+    ul li {
+        margin: 10px 0;
+    }
+    
+    .hero {
+        padding: 30px;
+    }
+    
+    .menu-items {
+        flex-direction: column;
+    }
+    
+    .carousel-container {
+        width: 100%;
+    }
+    
+    video {
+        width: 100%;
+    }
+    
+    input, textarea {
+        width: 90%;
+    }
+}
+/* Responsive card */
+@media screen and (max-width: 768px) {
+    .food-card {
+        width: 90%;
+        margin: 10px auto;
+    }
+}
+
+/*  Cart model css */
+/* Cart Icon */
+.cart-icon {
+    display: block;
+    top: 20px;
+    right: 30px;
+    cursor: pointer;
+}
+
+.cart-icon img {
+    width: 40px;
+}
+
+/* Modal Styles */
+.cart-modal {
+    display: none; /* Initially Hidden */
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+/* Ensure modal appears */
+.cart-modal.show {
+    display: flex;
+}
+
+.cart-content {
+    background: white;
+    width: 50%;
+    max-width: 600px;
+    padding: 40px;
+    border-radius: 10px;
+    text-align: center;
+    position: relative;
+}
+
+/* Close Button */
+.close-btn {
+    position: absolute;
+    top: 15px;
+    right: 20px;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+/* Empty Cart Message */
+.cart-empty img {
+    width: 100px;
+    opacity: 0.5;
+    margin-bottom: 10px;
+}
+
+.cart-empty h2 {
+    font-size: 24px;
+    margin: 10px 0;
+    font-weight: bold;
+}
+
+.cart-empty p {
+    color: #777;
+    margin-bottom: 20px;
+}
+
+/* Back to Menu Button */
+.cart-empty button {
+    background-color: #22c55e;
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.cart-empty button:hover {
+    background-color: #16a34a;
+} 
+@media screen and (max-width: 480px) {
+    .logo {
+        font-size: 20px;
+    }
+
+    .nav-right {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .hero {
+        flex-direction: column;
+        text-align: center;
+        padding: 20px;
+    }
+
+    .p1 {
+        font-size: 36px; /* Reduce font size for smaller screens */
+    }
+
+    p {
+        font-size: 16px;
+    }
+
+    .search-container {
+        width: 90%;
+    }
+
+    .food-card {
+        width: 100%;
+    }
+
+    .cart-icon img {
+        width: 25px;
+    }
+
+    video {
+        width: 100%;
+    }
+
+    .footer-container {
+        flex-direction: column;
+    }
+
+    .footer-nav ul {
+        flex-direction: column;
+        gap: 10px;
+    }
+}
