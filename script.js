@@ -8,44 +8,44 @@ document.addEventListener("DOMContentLoaded", function () {
     });
 
     // Handle carousel functionality
-    const prevBtn = document.querySelector(".prev");
-    const nextBtn = document.querySelector(".next");
-    const carouselContainer = document.querySelector(".carousel-container");
+const prevBtn = document.querySelector(".prev");
+const nextBtn = document.querySelector(".next");
+const carouselContainer = document.querySelector(".carousel-container");
+const foodCards = document.querySelectorAll(".food-card");
 
-    if (prevBtn && nextBtn && carouselContainer) {
-        let scrollAmount = 0;
-        const scrollStep = 200;
-        const maxScroll = carouselContainer.scrollWidth - carouselContainer.clientWidth;
-        let autoScrollInterval;
+if (prevBtn && nextBtn && carouselContainer && foodCards.length > 0) {
+    let scrollAmount = 0;
+    const cardWidth = foodCards[0].offsetWidth + 16; // Adding margin/gap between cards
+    const maxScroll = carouselContainer.scrollWidth - carouselContainer.clientWidth;
+    let autoScrollInterval;
 
-        const autoScroll = () => {
-            scrollAmount += scrollStep;
-            if (scrollAmount > maxScroll) scrollAmount = 0;
-            carouselContainer.scrollTo({ left: scrollAmount, behavior: "smooth" });
-        };
+    const autoScroll = () => {
+        scrollAmount += cardWidth;
+        if (scrollAmount > maxScroll) scrollAmount = 0;
+        carouselContainer.scrollTo({ left: scrollAmount, behavior: "smooth" });
+    };
 
-        autoScrollInterval = setInterval(autoScroll, 2500);
+    autoScrollInterval = setInterval(autoScroll, 2500);
 
-        carouselContainer.addEventListener("mouseenter", () => clearInterval(autoScrollInterval));
-        carouselContainer.addEventListener("mouseleave", () => {
-            autoScrollInterval = setInterval(autoScroll, 3000);
-        });
+    carouselContainer.addEventListener("mouseenter", () => clearInterval(autoScrollInterval));
+    carouselContainer.addEventListener("mouseleave", () => {
+        autoScrollInterval = setInterval(autoScroll, 3000);
+    });
 
-        prevBtn.addEventListener("click", function () {
-            clearInterval(autoScrollInterval);
-            scrollAmount = Math.max(scrollAmount - scrollStep, 0);
-            carouselContainer.scrollTo({ left: scrollAmount, behavior: "smooth" });
-            autoScrollInterval = setInterval(autoScroll, 3000);
-        });
+    prevBtn.addEventListener("click", function () {
+        clearInterval(autoScrollInterval);
+        scrollAmount = Math.max(scrollAmount - cardWidth, 0);
+        carouselContainer.scrollTo({ left: scrollAmount, behavior: "smooth" });
+        autoScrollInterval = setInterval(autoScroll, 3000);
+    });
 
-        nextBtn.addEventListener("click", function () {
-            clearInterval(autoScrollInterval);
-            scrollAmount = Math.min(scrollAmount + scrollStep, maxScroll);
-            carouselContainer.scrollTo({ left: scrollAmount, behavior: "smooth" });
-            autoScrollInterval = setInterval(autoScroll, 3000);
-        });
-    }
-
+    nextBtn.addEventListener("click", function () {
+        clearInterval(autoScrollInterval);
+        scrollAmount = Math.min(scrollAmount + cardWidth, maxScroll);
+        carouselContainer.scrollTo({ left: scrollAmount, behavior: "smooth" });
+        autoScrollInterval = setInterval(autoScroll, 3000);
+    });
+}
     // Request dish modal functionality
     const requestButton = document.querySelector("[data-action='request-dish']");
     const modal = document.getElementById("requestDishModal");
